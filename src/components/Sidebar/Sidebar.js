@@ -6,6 +6,7 @@ import {
   InfoCircleOutlined,
   PicCenterOutlined,
   UsergroupAddOutlined,
+  ProfileFilled,
 } from "@ant-design/icons";
 
 import {Layout, Menu} from "antd";
@@ -48,6 +49,7 @@ const Sidebar = () => {
       icon: <UserOutlined />,
     },
     {name: "Businesses", path: "/businesses", icon: <InfoCircleOutlined />},
+    {name: "Recipes", path: "/recipes", icon: <ProfileFilled />},
   ];
   const onCollapse = (collapsed) => {
     console.log(collapsed);

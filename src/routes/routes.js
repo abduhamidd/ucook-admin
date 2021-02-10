@@ -8,6 +8,7 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import {useSelector} from "react-redux";
 import UsersPage from "pages/UsersPage";
 import ProductsPage from "pages/ProductsPage/ProductsPage";
+import {RecipesPage} from "pages/RecipesPage";
 
 const AppRoute = ({component: Component, layout: Layout, ...rest}) => (
   <Route
@@ -48,6 +49,11 @@ const privateRoutes = [
     path: "/businessrequests",
     layout: DashboardLayout,
     component: BusinessPage,
+  },
+  {
+    path: "/recipes",
+    layout: DashboardLayout,
+    component: RecipesPage,
   },
 ];
 const loginRoute = [
